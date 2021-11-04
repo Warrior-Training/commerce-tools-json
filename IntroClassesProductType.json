@@ -1,0 +1,193 @@
+{
+  "id": "3dd7596d-3072-455f-b028-0cfcb390f745",
+  "version": 6,
+  "lastMessageSequenceNumber": 2,
+  "createdAt": "2021-10-20T22:17:50.162Z",
+  "lastModifiedAt": "2021-10-20T22:18:55.063Z",
+  "lastModifiedBy": {
+    "isPlatformClient": true,
+    "user": {
+      "typeId": "user",
+      "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+    }
+  },
+  "createdBy": {
+    "isPlatformClient": true,
+    "user": {
+      "typeId": "user",
+      "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+    }
+  },
+  "productType": {
+    "typeId": "product-type",
+    "id": "e9c92f08-776b-4309-8f37-6e10c6916dd8"
+  },
+  "masterData": {
+    "current": {
+      "name": {
+        "en-US": " Intro Class at City Kickboxing"
+      },
+      "description": {
+        "en-US": " Intro Class at City Kickboxing"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "0c6489d3-0b99-44ad-9006-699d637cfe0d"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en-US": "intro-class-at-city-kickboxing"
+      },
+      "metaTitle": {
+        "en-US": ""
+      },
+      "metaDescription": {
+        "en-US": ""
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "intro-class-ckb-1",
+        "key": "intro-class-ckb-1",
+        "prices": [],
+        "images": [],
+        "attributes": [
+          {
+            "name": "gym-attribute",
+            "value": {
+              "typeId": "channel",
+              "id": "4101dd0e-2b98-4717-a424-ba1ecb214b0a"
+            }
+          },
+          {
+            "name": "session-datetime",
+            "value": "2021-10-24T19:45:00.000Z"
+          }
+        ],
+        "assets": [],
+        "availability": {
+          "isOnStock": true,
+          "availableQuantity": 40,
+          "version": 1,
+          "id": "fef30c8f-61c3-40bb-8fd4-b4136bebe865"
+        }
+      },
+      "variants": [
+        {
+          "id": 2,
+          "sku": "intro-class-ckb-2",
+          "key": "intro-class-ckb-2",
+          "prices": [],
+          "images": [],
+          "attributes": [
+            {
+              "name": "gym-attribute",
+              "value": {
+                "typeId": "channel",
+                "id": "4101dd0e-2b98-4717-a424-ba1ecb214b0a"
+              }
+            },
+            {
+              "name": "session-datetime",
+              "value": "2021-10-27T18:00:00.000Z"
+            }
+          ],
+          "assets": [],
+          "availability": {
+            "isOnStock": true,
+            "availableQuantity": 50,
+            "version": 1,
+            "id": "a459e519-0fca-4774-8f49-43c60fa6ff14"
+          }
+        }
+      ],
+      "searchKeywords": {}
+    },
+    "staged": {
+      "name": {
+        "en-US": " Intro Class at City Kickboxing"
+      },
+      "description": {
+        "en-US": " Intro Class at City Kickboxing"
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "0c6489d3-0b99-44ad-9006-699d637cfe0d"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en-US": "intro-class-at-city-kickboxing"
+      },
+      "metaTitle": {
+        "en-US": ""
+      },
+      "metaDescription": {
+        "en-US": ""
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "intro-class-ckb-1",
+        "key": "intro-class-ckb-1",
+        "prices": [],
+        "images": [],
+        "attributes": [
+          {
+            "name": "gym-attribute",
+            "value": {
+              "typeId": "channel",
+              "id": "4101dd0e-2b98-4717-a424-ba1ecb214b0a"
+            }
+          },
+          {
+            "name": "session-datetime",
+            "value": "2021-10-24T19:45:00.000Z"
+          }
+        ],
+        "assets": [],
+        "availability": {
+          "isOnStock": true,
+          "availableQuantity": 40,
+          "version": 1,
+          "id": "fef30c8f-61c3-40bb-8fd4-b4136bebe865"
+        }
+      },
+      "variants": [
+        {
+          "id": 2,
+          "sku": "intro-class-ckb-2",
+          "key": "intro-class-ckb-2",
+          "prices": [],
+          "images": [],
+          "attributes": [
+            {
+              "name": "gym-attribute",
+              "value": {
+                "typeId": "channel",
+                "id": "4101dd0e-2b98-4717-a424-ba1ecb214b0a"
+              }
+            },
+            {
+              "name": "session-datetime",
+              "value": "2021-10-27T18:00:00.000Z"
+            }
+          ],
+          "assets": [],
+          "availability": {
+            "isOnStock": true,
+            "availableQuantity": 50,
+            "version": 1,
+            "id": "a459e519-0fca-4774-8f49-43c60fa6ff14"
+          }
+        }
+      ],
+      "searchKeywords": {}
+    },
+    "published": true,
+    "hasStagedChanges": false
+  },
+  "key": "intro-class-ckb",
+  "lastVariantId": 2
+}
