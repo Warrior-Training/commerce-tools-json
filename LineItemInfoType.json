@@ -1,0 +1,37 @@
+{
+	"id": "bc33b864-c6c0-4b01-be52-2bd41f843058",
+	"version": 1,
+	"createdAt": "2021-10-27T03:10:36.580Z",
+	"lastModifiedAt": "2021-10-27T03:10:36.580Z",
+	"lastModifiedBy": {
+		"clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+		"isPlatformClient": false
+	},
+	"createdBy": {
+		"clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+		"isPlatformClient": false
+	},
+	"key": "line-item-info",
+	"name": {
+		"en": "Line Item Info"
+	},
+	"description": {
+		"en": ""
+	},
+	"resourceTypeIds": [
+		"line-item"
+	],
+	"fieldDefinitions": [
+		{
+			"name": "instalments",
+			"label": {
+				"en": "Number Of Instalments"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+		}
+	]
+}
