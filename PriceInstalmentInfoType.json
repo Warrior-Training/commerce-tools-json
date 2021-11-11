@@ -1,0 +1,91 @@
+{
+	"id": "d442792c-396f-461c-b6ae-63f09bec073c",
+	"version": 1,
+	"createdAt": "2021-10-15T03:50:31.057Z",
+	"lastModifiedAt": "2021-10-15T03:50:31.057Z",
+	"lastModifiedBy": {
+		"clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+		"isPlatformClient": false
+	},
+	"createdBy": {
+		"clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+		"isPlatformClient": false
+	},
+	"key": "price-instalment-info",
+	"name": {
+		"en": "Price Instalment Info"
+	},
+	"description": {
+		"en": ""
+	},
+	"resourceTypeIds": [
+		"product-price"
+	],
+	"fieldDefinitions": [
+		{
+			"name": "registrationFee",
+			"label": {
+				"en": "Registration Fee"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+		},
+		{
+			"name": "instalmentAmount",
+			"label": {
+				"en": "Instalment Amount"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+		},
+		{
+			"name": "numberOfInstalments",
+			"label": {
+				"en": "Number Of Instalments"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+		},
+		{
+			"name": "paymentFrequency",
+			"label": {
+				"en": "Payment Frequency"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+		},
+		{
+			"name": "paymentFrequencyUnit",
+			"label": {
+				"en": "Payment Frequency Unit"
+			},
+			"required": false,
+			"type": {
+				"name": "Enum",
+				"values": [
+					{
+						"key": "weekly",
+						"label": "Weekly"
+					},
+					{
+						"key": "monthly",
+						"label": "Monthly"
+					}
+				]
+			},
+			"inputHint": "SingleLine"
+		}
+	]
+}
