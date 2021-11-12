@@ -1,0 +1,59 @@
+{
+  "id": "d34df8f0-d39c-48c5-b058-900db39c3470",
+  "version": 4,
+  "createdAt": "2021-10-28T02:10:26.899Z",
+  "lastModifiedAt": "2021-11-03T07:36:59.810Z",
+  "lastModifiedBy": {
+    "isPlatformClient": true
+  },
+  "createdBy": {
+    "clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+    "isPlatformClient": false
+  },
+  "key": "customer-info",
+  "name": {
+    "en": "Customer Information"
+  },
+  "resourceTypeIds": ["customer"],
+  "fieldDefinitions": [
+    {
+      "name": "customer-mobile-number",
+      "label": {
+        "en": "Mobile Number"
+      },
+      "required": true,
+      "type": {
+        "name": "String"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "customer-group-set",
+      "label": {
+        "en": "Customer Group"
+      },
+      "required": false,
+      "type": {
+        "name": "Set",
+        "elementType": {
+          "name": "Enum",
+          "values": [
+            {
+              "key": "student-customer",
+              "label": "Student"
+            },
+            {
+              "key": "military-customer",
+              "label": "Military"
+            },
+            {
+              "key": "returning-warrior-customer",
+              "label": "Returning Warrior"
+            }
+          ]
+        }
+      },
+      "inputHint": "SingleLine"
+    }
+  ]
+}

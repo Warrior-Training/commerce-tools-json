@@ -1,0 +1,114 @@
+{
+  "id": "90dadfc8-3f11-47f0-82b1-08965d3ce5a7",
+  "version": 13,
+  "createdAt": "2021-10-15T02:33:20.151Z",
+  "lastModifiedAt": "2021-10-29T07:44:09.656Z",
+  "lastModifiedBy": {
+    "isPlatformClient": true
+  },
+  "createdBy": {
+    "clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+    "isPlatformClient": false
+  },
+  "key": "gym-info",
+  "name": {
+    "en": "Gym Information"
+  },
+  "resourceTypeIds": ["channel"],
+  "fieldDefinitions": [
+    {
+      "name": "coachName",
+      "label": {
+        "en": "Coach Name"
+      },
+      "required": false,
+      "type": {
+        "name": "LocalizedString"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "phone",
+      "label": {
+        "en": "Phone Number"
+      },
+      "required": false,
+      "type": {
+        "name": "String"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "websiteURL",
+      "label": {
+        "en": "Website URL"
+      },
+      "required": false,
+      "type": {
+        "name": "String"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "isActive",
+      "label": {
+        "en": "Active"
+      },
+      "required": false,
+      "type": {
+        "name": "Boolean"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "gymTags",
+      "label": {
+        "en": "Gym Tags"
+      },
+      "required": false,
+      "type": {
+        "name": "Set",
+        "elementType": {
+          "name": "Enum",
+          "values": [
+            {
+              "key": "kickboxing",
+              "label": "Kickboxing"
+            },
+            {
+              "key": "muay-thai",
+              "label": "Muay Thai"
+            },
+            {
+              "key": "brazilian-jiu-jitsu",
+              "label": "Brazilian jiu-jitsu"
+            }
+          ]
+        }
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "coordinate-latitude",
+      "label": {
+        "en": "Latitude"
+      },
+      "required": false,
+      "type": {
+        "name": "Number"
+      },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "coordinate-longitude",
+      "label": {
+        "en": "Longitude"
+      },
+      "required": false,
+      "type": {
+        "name": "Number"
+      },
+      "inputHint": "SingleLine"
+    }
+  ]
+}
