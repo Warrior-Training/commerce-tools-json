@@ -1,0 +1,105 @@
+{
+    "id": "d6eb534c-939d-4d4b-a875-8e0ad8c606c9",
+    "version": 1,
+    "createdAt": "2021-11-25T04:24:35.509Z",
+    "lastModifiedAt": "2021-11-25T04:24:35.509Z",
+    "lastModifiedBy": {
+        "clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+        "isPlatformClient": false
+    },
+    "createdBy": {
+        "clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+        "isPlatformClient": false
+    },
+    "name": "program-schedule",
+    "description": "Program Schedule",
+    "classifier": "Complex",
+    "attributes": [
+        {
+            "name": "dayOfWeek",
+            "label": {
+                "en": "Day of the week"
+            },
+            "isRequired": false,
+            "type": {
+                "name": "lenum",
+                "values": [
+                    {
+                        "key": "sunday",
+                        "label": {
+                            "en": "Sunday"
+                        }
+                    },
+                    {
+                        "key": "monday",
+                        "label": {
+                            "en": "Monday"
+                        }
+                    },
+                    {
+                        "key": "tuesday",
+                        "label": {
+                            "en": "Tuesday"
+                        }
+                    },
+                    {
+                        "key": "wednesday",
+                        "label": {
+                            "en": "Wednesday"
+                        }
+                    },
+                    {
+                        "key": "thursday",
+                        "label": {
+                            "en": "Thursday"
+                        }
+                    },
+                    {
+                        "key": "friday",
+                        "label": {
+                            "en": "Friday"
+                        }
+                    },
+                    {
+                        "key": "saturday",
+                        "label": {
+                            "en": "Saturday"
+                        }
+                    }
+                ]
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "startTime",
+            "label": {
+                "en": "Session start time"
+            },
+            "isRequired": false,
+            "type": {
+                "name": "time"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "endTime",
+            "label": {
+                "en": "Session end time"
+            },
+            "isRequired": false,
+            "type": {
+                "name": "time"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        }
+    ]
+}

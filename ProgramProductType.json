@@ -1,0 +1,154 @@
+{
+    "id": "8a4aa4c1-220d-4167-9d0f-3b5c27318db2",
+    "version": 46,
+    "createdAt": "2021-10-11T21:55:25.724Z",
+    "lastModifiedAt": "2021-11-25T04:38:08.334Z",
+    "lastModifiedBy": {
+        "clientId": "nELX3kPQkzrmQ_73H67Hzspw",
+        "isPlatformClient": false
+    },
+    "createdBy": {
+        "isPlatformClient": true,
+        "user": {
+            "typeId": "user",
+            "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+        }
+    },
+    "name": "Program Product Type",
+    "description": "Define the product type for programs",
+    "classifier": "Complex",
+    "attributes": [
+        {
+            "name": "series-short-desc-attribute",
+            "label": {
+                "de-DE": "",
+                "en-US": "Series Short Description"
+            },
+            "inputTip": {
+                "de-DE": "",
+                "en-US": ""
+            },
+            "isRequired": true,
+            "type": {
+                "name": "text"
+            },
+            "attributeConstraint": "Unique",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "program-start-date-attribute",
+            "label": {
+                "de-DE": "",
+                "en-US": "Program Start Date"
+            },
+            "inputTip": {
+                "de-DE": "",
+                "en-US": ""
+            },
+            "isRequired": false,
+            "type": {
+                "name": "date"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "gym-attribute",
+            "label": {
+                "en-US": "Gym"
+            },
+            "inputTip": {
+                "en-US": "Where the program is delivered"
+            },
+            "isRequired": true,
+            "type": {
+                "name": "reference",
+                "referenceTypeId": "channel"
+            },
+            "attributeConstraint": "SameForAll",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "is-cancelled-attribute",
+            "label": {
+                "en-US": "Cancelled"
+            },
+            "inputTip": {
+                "en-US": "Series in cancelled status will not be shown on the website"
+            },
+            "isRequired": true,
+            "type": {
+                "name": "boolean"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "number-of-sessions-attribute",
+            "label": {
+                "en-US": "Number of sessions"
+            },
+            "inputTip": {
+                "en-US": ""
+            },
+            "isRequired": true,
+            "type": {
+                "name": "number"
+            },
+            "attributeConstraint": "SameForAll",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "skipped-dates",
+            "label": {
+                "en-US": "Skipped Dates"
+            },
+            "inputTip": {
+                "en-US": "Specify if there are no-training days, e.g. due to public holidays"
+            },
+            "isRequired": false,
+            "type": {
+                "name": "set",
+                "elementType": {
+                    "name": "date"
+                }
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        },
+        {
+            "name": "weeklySchedule",
+            "label": {
+                "en": "Weekly Program Schedule"
+            },
+            "isRequired": false,
+            "type": {
+                "name": "set",
+                "elementType": {
+                    "name": "nested",
+                    "typeReference": {
+                        "typeId": "product-type",
+                        "id": "d6eb534c-939d-4d4b-a875-8e0ad8c606c9"
+                    }
+                }
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+        }
+    ],
+    "key": "program-product-type"
+}
