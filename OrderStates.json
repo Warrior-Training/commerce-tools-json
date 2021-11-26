@@ -1,0 +1,180 @@
+{
+    "key": "cancelled-partial",
+    "type": "OrderState",
+    "name": {
+        "en": "Cancelled (Partial Refund)"
+    },
+    "description": {
+        "en": "Cancelling an order which requires a partial refund to member"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "cancelled-full",
+    "type": "OrderState",
+    "name": {
+        "en": "Cancelled (Full Refund)"
+    },
+    "description": {
+        "en": "Cancelling an order which requires a full refund to member"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "complete",
+    "type": "OrderState",
+    "name": {
+        "en": "Complete"
+    },
+    "description": {
+        "en": "Order complete"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "awaiting-payment",
+    "type": "OrderState",
+    "name": {
+        "en": "Awaiting Payment"
+    },
+    "description": {
+        "en": "Ongoing subscription"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "paused",
+    "type": "OrderState",
+    "name": {
+        "en": "Paused"
+    },
+    "description": {
+        "en": "Paused subscription"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "failed",
+    "type": "OrderState",
+    "name": {
+        "en": "Failed"
+    },
+    "description": {
+        "en": "Payment failure or any other exception"
+    },
+    "initial": false,
+    "transitions": [
+
+    ]
+}
+
+{
+    "key": "pending",
+    "type": "OrderState",
+    "name": {
+        "en": "Pending"
+    },
+    "description": {
+        "en": "Initial state"
+    },
+    "initial": true,
+    "transitions": [
+
+    ]
+}
+
+
+
+---Pending
+
+{
+  "version" : 1,
+  "actions" : [ {
+    "action" : "setTransitions",
+    "transitions" : [
+        {"key" : "cancelled-full"},
+		{"key" : "cancelled-partial"},
+		{"key" : "failed"},
+		{"key" : "awaiting-payment"},
+		{"key" : "complete"}
+    ]
+  } ]
+}
+
+
+---Failed
+
+{
+  "version" : 1,
+  "actions" : [ {
+    "action" : "setTransitions",
+    "transitions" : [
+        {"key" : "cancelled-full"},
+		{"key" : "cancelled-partial"},
+		{"key" : "awaiting-payment"}
+    ]
+  } ]
+}
+
+---Awaiting Payment
+
+{
+  "version" : 1,
+  "actions" : [ {
+    "action" : "setTransitions",
+    "transitions" : [
+        {"key" : "cancelled-full"},
+		{"key" : "cancelled-partial"},
+		{"key" : "failed"},
+		{"key" : "paused"},
+		{"key" : "complete"}
+    ]
+  } ]
+}
+
+---Paused
+
+{
+  "version" : 1,
+  "actions" : [ {
+    "action" : "setTransitions",
+    "transitions" : [
+        {"key" : "cancelled-full"},
+		{"key" : "cancelled-partial"},
+		{"key" : "awaiting-payment"}
+    ]
+  } ]
+}
+
+---Complete
+
+{
+  "version" : 1,
+  "actions" : [ {
+    "action" : "setTransitions",
+    "transitions" : [
+        {"key" : "cancelled-full"},
+		{"key" : "cancelled-partial"}
+    ]
+  } ]
+}
