@@ -1,0 +1,980 @@
+{
+    "limit": 20,
+    "offset": 0,
+    "count": 9,
+    "total": 9,
+    "results": [
+        {
+            "id": "137f8f9b-abda-4754-b395-a56e97cd6155",
+            "version": 12,
+            "createdAt": "2021-12-16T02:50:54.498Z",
+            "lastModifiedAt": "2021-12-16T04:48:20.837Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 14000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 22000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 15000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"student-customer\") and lineItemExists(price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\""
+            },
+            "name": {
+                "en-US": "Student Discount (Upfront)"
+            },
+            "description": {
+                "en-US": "Student Discount (Upfront)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.3",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "3889823c-3fde-49a5-957e-d45bb9153f76"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "student-discount-upfront"
+        },
+        {
+            "id": "15eae35d-9658-49ab-99ac-151d1a606875",
+            "version": 6,
+            "createdAt": "2021-12-16T03:18:47.175Z",
+            "lastModifiedAt": "2021-12-16T04:48:14.703Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 16000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 26000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 25000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 26500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 15000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"student-customer\") and lineItemExists(price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\""
+            },
+            "name": {
+                "en-US": "Student Discount (Weekly)"
+            },
+            "description": {
+                "en-US": "Student Discount (Weekly)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.2",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "a1e8c7c2-5df6-464a-b738-34e3d1dae347"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "student-discount-weekly"
+        },
+        {
+            "id": "b6909145-71ef-4575-9faa-7cb5f2734597",
+            "version": 6,
+            "createdAt": "2021-12-16T03:19:25.586Z",
+            "lastModifiedAt": "2021-12-16T04:48:30.215Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 16000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 26000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 25000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 26500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 15000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"student-customer\") and lineItemExists(price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\""
+            },
+            "name": {
+                "en-US": "Student Discount (Fortnightly)"
+            },
+            "description": {
+                "en-US": "Student Discount (Fortnightly)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.1",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "0f0050e1-aee6-4385-a4b6-81a5b5857439"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "student-discount-fortnightly"
+        },
+        {
+            "id": "dab4ec7e-aca1-46ca-8b7a-c40a2cf4d2e8",
+            "version": 4,
+            "createdAt": "2021-12-16T05:48:02.172Z",
+            "lastModifiedAt": "2021-12-16T05:54:53.153Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 14000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 22000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 12000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"military-customer\") and lineItemExists(price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\""
+            },
+            "name": {
+                "en-US": "Military Discount (Upfront)"
+            },
+            "description": {
+                "en-US": "Military Discount (Upfront)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.6",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "3889823c-3fde-49a5-957e-d45bb9153f76"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "military-discount-upfront"
+        },
+        {
+            "id": "5e4a75aa-7402-46d5-8292-418708dd44fb",
+            "version": 4,
+            "createdAt": "2021-12-16T05:53:27.702Z",
+            "lastModifiedAt": "2021-12-16T05:55:06.925Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 16000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 26000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 25000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 26500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 26500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 15000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"military-customer\") and lineItemExists(price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\""
+            },
+            "name": {
+                "en-US": "Military Discount (Fortnightly)"
+            },
+            "description": {
+                "en-US": "Military Discount (Fortnightly)"
+            },
+            "stackingMode": "StopAfterThisDiscount",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.4",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "0f0050e1-aee6-4385-a4b6-81a5b5857439"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "military-discount-fortnightly"
+        },
+        {
+            "id": "30549bd9-656f-47b5-b886-85227598ccdc",
+            "version": 2,
+            "createdAt": "2021-12-16T05:54:16.881Z",
+            "lastModifiedAt": "2021-12-16T05:54:53.159Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 16000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 26000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 25000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 26500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 24000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 15000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"military-customer\") and lineItemExists(price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\""
+            },
+            "name": {
+                "en-US": "Military Discount (Weekly)"
+            },
+            "description": {
+                "en-US": "Military Discount (Weekly)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.5",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "a1e8c7c2-5df6-464a-b738-34e3d1dae347"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "military-discount-weekly"
+        },
+        {
+            "id": "9300f3c9-2967-4076-8316-1bab714cee10",
+            "version": 2,
+            "createdAt": "2021-12-19T21:12:21.346Z",
+            "lastModifiedAt": "2021-12-19T21:14:51.178Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 34000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 41000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 64000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 62500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 62500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 35000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"returning-warrior-customer\") and lineItemExists(price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"0f0050e1-aee6-4385-a4b6-81a5b5857439\""
+            },
+            "name": {
+                "en-US": "Returning Warrior Discount (Fortnightly)"
+            },
+            "description": {
+                "en-US": "Returning Warrior Discount (Fortnightly)"
+            },
+            "stackingMode": "StopAfterThisDiscount",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.7",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "0f0050e1-aee6-4385-a4b6-81a5b5857439"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "rw-discount-fortnightly"
+        },
+        {
+            "id": "98e34f35-4b1b-4f38-8aa9-438634d576f5",
+            "version": 4,
+            "createdAt": "2021-12-19T21:13:23.460Z",
+            "lastModifiedAt": "2021-12-19T21:14:51.178Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 34000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 41000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 64000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 62500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 62500,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 35000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"returning-warrior-customer\") and lineItemExists(price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"a1e8c7c2-5df6-464a-b738-34e3d1dae347\""
+            },
+            "name": {
+                "en-US": "Returning Warrior Discount (Weekly)"
+            },
+            "description": {
+                "en-US": "Returning Warrior Discount (Weekly)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.8",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "a1e8c7c2-5df6-464a-b738-34e3d1dae347"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "rw-discount-weekly"
+        },
+        {
+            "id": "15982139-197d-470e-ad32-9cb9953848aa",
+            "version": 2,
+            "createdAt": "2021-12-19T21:14:39.577Z",
+            "lastModifiedAt": "2021-12-19T21:14:51.178Z",
+            "lastModifiedBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "createdBy": {
+                "isPlatformClient": true,
+                "user": {
+                    "typeId": "user",
+                    "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+                }
+            },
+            "value": {
+                "type": "absolute",
+                "money": [
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "EUR",
+                        "centAmount": 32000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "USD",
+                        "centAmount": 36000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "NZD",
+                        "centAmount": 56000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "AUD",
+                        "centAmount": 54000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "CAD",
+                        "centAmount": 54000,
+                        "fractionDigits": 2
+                    },
+                    {
+                        "type": "centPrecision",
+                        "currencyCode": "GBP",
+                        "centAmount": 30000,
+                        "fractionDigits": 2
+                    }
+                ]
+            },
+            "cartPredicate": "custom.`customer-group` = (\"returning-warrior-customer\") and lineItemExists(price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\") = true",
+            "target": {
+                "type": "lineItems",
+                "predicate": "price.channel.id = \"3889823c-3fde-49a5-957e-d45bb9153f76\""
+            },
+            "name": {
+                "en-US": "Returning Warrior Discount (Upfront)"
+            },
+            "description": {
+                "en-US": "Returning Warrior Discount (Upfront)"
+            },
+            "stackingMode": "Stacking",
+            "isActive": true,
+            "requiresDiscountCode": false,
+            "sortOrder": "0.9",
+            "references": [
+                {
+                    "typeId": "channel",
+                    "id": "3889823c-3fde-49a5-957e-d45bb9153f76"
+                }
+            ],
+            "attributeTypes": {},
+            "cartFieldTypes": {
+                "customer-group": {
+                    "name": "Set",
+                    "elementType": {
+                        "name": "Enum",
+                        "values": [
+                            {
+                                "key": "student-customer",
+                                "label": "Student"
+                            },
+                            {
+                                "key": "military-customer",
+                                "label": "Military"
+                            },
+                            {
+                                "key": "returning-warrior-customer",
+                                "label": "Returning Warrior"
+                            }
+                        ]
+                    }
+                }
+            },
+            "lineItemFieldTypes": {},
+            "customLineItemFieldTypes": {},
+            "key": "rw-discount-upfront"
+        }
+    ]
+}
