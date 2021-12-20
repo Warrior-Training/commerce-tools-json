@@ -39,15 +39,15 @@
           "name": "Enum",
           "values": [
             {
-              "key": "student-customer",
+              "key": "students",
               "label": "Student"
             },
             {
-              "key": "military-customer",
+              "key": "veterans",
               "label": "Military"
             },
             {
-              "key": "returning-warrior-customer",
+              "key": "returning-warriors",
               "label": "Returning Warrior"
             }
           ]
