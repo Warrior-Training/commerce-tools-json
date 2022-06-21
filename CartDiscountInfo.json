@@ -1,0 +1,55 @@
+{
+    "id": "ee14e3be-444f-4058-a9c2-1f8529f70822",
+    "version": 1,
+    "createdAt": "2022-06-02T06:33:33.440Z",
+    "lastModifiedAt": "2022-06-02T06:33:33.440Z",
+    "lastModifiedBy": {
+    "isPlatformClient": true
+    },
+    "createdBy": {
+    "isPlatformClient": true
+    },
+    "key": "cart-discount-info",
+    "name": {
+    "en": "Cart Discount Info"
+    },
+    "description": {
+    "en": ""
+    },
+    "resourceTypeIds": ["cart-discount"],
+    "fieldDefinitions": [
+    {
+        "name": "offsetDays",
+        "label": {
+        "en": "Offset Days (incl. weekends)"
+        },
+        "required": false,
+        "type": {
+        "name": "Number"
+        },
+        "inputHint": "SingleLine"
+    },
+    {
+        "name": "upfrontPayment",
+        "label": {
+        "en": "Upfront Payment Discount"
+        },
+        "required": false,
+        "type": {
+        "name": "Boolean"
+        },
+        "inputHint": "SingleLine"
+    },
+    {
+        "name": "applyFirstInstalment",
+        "label": {
+        "en": "Apply to 1st Instalment Only"
+        },
+        "required": false,
+        "type": {
+        "name": "Boolean"
+        },
+        "inputHint": "SingleLine"
+    }
+    ]
+}

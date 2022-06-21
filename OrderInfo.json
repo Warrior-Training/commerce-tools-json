@@ -1,0 +1,87 @@
+{
+    "id": "3b7a9ac4-a323-469f-8794-50a9254fe71f",
+    "version": 5,
+    "createdAt": "2022-01-14T05:55:51.819Z",
+    "lastModifiedAt": "2022-06-02T07:22:00.292Z",
+    "lastModifiedBy": {
+    "isPlatformClient": true
+    },
+    "createdBy": {
+    "clientId": "c1knYhrjCYY92FDEHXM-4bGI",
+    "isPlatformClient": false
+    },
+    "key": "order-info",
+    "name": {
+    "en": "Order Information"
+    },
+    "resourceTypeIds": [
+    "order"
+    ],
+    "fieldDefinitions": [
+    {
+        "name": "customer-group",
+        "label": {
+        "en": "Customer Group"
+        },
+        "required": false,
+        "type": {
+        "name": "Set",
+        "elementType": {
+            "name": "Enum",
+            "values": [
+            {
+                "key": "students",
+                "label": "Student"
+            },
+            {
+                "key": "veterans",
+                "label": "Military"
+            },
+            {
+                "key": "returning-warriors",
+                "label": "Returning Warrior"
+            },
+            {
+                "key": "corporate",
+                "label": "Corporate"
+            }
+            ]
+        }
+        },
+        "inputHint": "SingleLine"
+    },
+    {
+        "name": "onlineOrder",
+        "label": {
+        "en": "Order Created From Website"
+        },
+        "required": false,
+        "type": {
+        "name": "Boolean"
+        },
+        "inputHint": "SingleLine"
+    },
+    {
+        "name": "first-payment-date",
+        "label": {
+        "en": "First Payment Date"
+        },
+        "required": false,
+        "type": {
+        "name": "Date"
+        },
+        "inputHint": "SingleLine"
+    },
+    {
+        "name": "next-payment-date",
+        "label": {
+        "en": "Next Payment Date"
+        },
+        "required": false,
+        "type": {
+        "name": "Date"
+        },
+        "inputHint": "SingleLine"
+    }
+    ]
+}

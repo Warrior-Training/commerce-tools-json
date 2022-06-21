@@ -32,6 +32,17 @@
 				"name": "Number"
 			},
 			"inputHint": "SingleLine"
-		}
+		},
+		{
+			"name": "orderStartDateOffset",
+			"label": {
+				"en": "Order Start Date Offset"
+			},
+			"required": false,
+			"type": {
+				"name": "Number"
+			},
+			"inputHint": "SingleLine"
+        }
 	]
 }

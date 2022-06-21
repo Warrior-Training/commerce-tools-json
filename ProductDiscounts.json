@@ -1,0 +1,78 @@
+{
+    "id": "bce6a27f-2621-4f03-bc93-3607f47e1b3e",
+    "version": 4,
+    "createdAt": "2022-06-14T07:49:58.330Z",
+    "lastModifiedAt": "2022-06-15T22:10:08.058Z",
+    "lastModifiedBy": {
+    "isPlatformClient": true,
+    "user": {
+        "typeId": "user",
+        "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+    }
+    },
+    "createdBy": {
+    "isPlatformClient": true,
+    "user": {
+        "typeId": "user",
+        "id": "1e066850-ab6a-4166-ab37-d1348aadfa8d"
+    }
+    },
+    "value": {
+    "type": "absolute",
+    "money": [
+        {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 7500,
+        "fractionDigits": 2
+        },
+        {
+        "type": "centPrecision",
+        "currencyCode": "USD",
+        "centAmount": 9000,
+        "fractionDigits": 2
+        },
+        {
+        "type": "centPrecision",
+        "currencyCode": "NZD",
+        "centAmount": 12000,
+        "fractionDigits": 2
+        },
+        {
+        "type": "centPrecision",
+        "currencyCode": "AUD",
+        "centAmount": 12500,
+        "fractionDigits": 2
+        },
+        {
+        "type": "centPrecision",
+        "currencyCode": "CAD",
+        "centAmount": 11000,
+        "fractionDigits": 2
+        },
+        {
+        "type": "centPrecision",
+        "currencyCode": "GBP",
+        "centAmount": 7200,
+        "fractionDigits": 2
+        }
+    ]
+    },
+    "predicate": "productType.id = \"526808b4-5f78-48f1-84f3-13ddcca975a1\"",
+    "name": {
+    "en-US": "Free Week Trial"
+    },
+    "description": {
+    "en-US": "Nothing to pay today, 1st week FREE"
+    },
+    "isActive": true,
+    "sortOrder": "0.1",
+    "references": [
+    {
+        "typeId": "product-type",
+        "id": "526808b4-5f78-48f1-84f3-13ddcca975a1"
+    }
+    ],
+    "attributeTypes": {},
+    "key": "1-WEEK-FREE"
+}
